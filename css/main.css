@@ -1247,6 +1247,56 @@ line-height: 1.6;
     .contact-us .boxes-holder .discribtion-box p:last-child {
         padding-bottom: 100px;
     }
+    @media (max-width: 767px) { 
+        .contact-us .boxes-holder {
+            flex-direction: column-reverse;
+        }
+        .contact-us .boxes-holder .input-box input {
+            flex-basis: unset;
+            border: 1px solid #d8d8d8;
+            font-size: 10px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            outline-color: #d8d8d8;
+            height: 30px;
+            padding-right: 5px;
+        }
+        .contact-us .boxes-holder .input-box textarea {
+            flex-basis: unset;
+            width: 250px;
+            border: 1px solid #d8d8d8;
+            font-size: 10px;
+            padding-left: 20px;
+            outline-color: #d8d8d8;
+            padding-top: 15px;
+            resize: none;
+            width: 100%;
+        }
+        .contact-us .boxes-holder .input-box button {
+            background-color: var(--main-color);
+            border: none;
+            padding: 10px 13px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 10px;
+            align-self: flex-end;
+            flex-basis: unset;
+        }
+        .contact-us .boxes-holder .discribtion-box h3 {
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 34px;
+            text-align: center;
+        }
+        .contact-us .boxes-holder .discribtion-box p {
+            font-size: 14px;
+            padding-bottom: 10px;
+            color: #777;
+            text-align: center;
+        }
+        
+
+    }
 
 
 
@@ -1296,6 +1346,7 @@ color: white;
     .footer p:last-of-type span {
 color: var(--main-color);
     }
+    
 
     /* end footer  */
     
