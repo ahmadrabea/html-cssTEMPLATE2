@@ -199,7 +199,13 @@ header .container nav .form {
 }
 header .container nav .form i{
     color: white;
+    transition: 0.3s;
+    cursor: pointer;
 }
+header .container nav .form i:hover{
+    color: var(--main-color);
+}
+
 header nav .toggle-menu{
     color: white;
     width: 22px;
@@ -309,6 +315,11 @@ header nav .toggle-menu{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .landing .change-background:hover {
+        color: var(--main-color);
     }
     @media (max-width:767px){
         .landing .change-background{
@@ -323,6 +334,7 @@ header nav .toggle-menu{
         left: 30px;
         
     }
+
 
     .landing .bullets {
         position: absolute;
@@ -421,7 +433,7 @@ header nav .toggle-menu{
     /* start banner */
     .banner {
         
-        background-image: url(/images/shuffle5.jpg);
+        background-image: url(../images/forest.jpg);
         background-size: cover;
         position: relative;
         height: 600px;
@@ -511,7 +523,15 @@ content: "";
         padding: 5px 20px;
         font-weight: 600;
         font-size: 16px;
+        transition: 0.3s;
+        cursor: pointer;
 }
+.portfolio .container .shuffle li:hover {
+    background-color: var(--main-color);
+        color: white;
+        border-radius: 3px;
+}
+
 @media (max-width:575px){
     .portfolio .container .shuffle li {
         padding: 5px 10px;
@@ -598,6 +618,10 @@ content: "";
     color: white;
     padding: 10px 24px;
     border-radius: 5px;
+    transition: 0.3s;
+    }
+    .portfolio .more:hover {
+        background-color: #1496b9 ;
     }
     /* end portfolio */
 
@@ -660,7 +684,13 @@ content: "";
         border: none;
         text-transform: uppercase;
         font-weight: 300;
+        transition: 0.3s;
+        cursor: pointer;
     }
+    .video .text button:hover {
+        background-color: var(--main-color);
+    }
+
 @media (max-width : 767px) {
     .video .text {
         position: absolute;
@@ -888,7 +918,13 @@ content: "";
     border-radius: 50%;
     margin-left: 5px;
     display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
     }
+    .skills .bullets li:hover{
+        background-color: var(--main-color);
+    }
+
     .skills .bullets li.active{
         background-color: var(--main-color);
         border-color: var(--main-color);
@@ -1060,6 +1096,12 @@ border-bottom: none;
     outline: none;
     color: black;
     text-transform: capitalize;
+    transition: 0.3s;
+    cursor: pointer;
+    }
+    .pricing .container .box button:hover {
+background-color: var(--main-color);
+color: white;
     }
 
     .pricing > p {
@@ -1073,6 +1115,12 @@ border-bottom: none;
         border: none;
         text-transform: capitalize;
         margin: 35px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .pricing  > button:hover {
+    background-color: #1496b9;
+
     }
 
     /* end pricing */
@@ -1131,7 +1179,14 @@ border-bottom: none;
     border: none;
     padding: 10px 26px;
     text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
     }
+    .subscribe .container .box button:hover {
+background-color: #1496b9 ;
+    }
+
+
     .subscribe .container .box p {
 color: white;
 line-height: 1.6;
@@ -1224,7 +1279,12 @@ line-height: 1.6;
     font-size: 15px;
     align-self: flex-end;
     flex-basis: 10%;
+    transition: 0.3s;
+    cursor: pointer;
     }
+    .contact-us .boxes-holder .input-box button:hover{
+    background-color: #1496b9 ;
+}
     .contact-us .boxes-holder .discribtion-box {
         flex-basis: 31%;
     }
@@ -1337,6 +1397,11 @@ line-height: 1.6;
     .footer .socialmedia i {
         color: white;
     font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    }
+    .footer .socialmedia i:hover {
+        color: var(--main-color);
     }
 
     .footer p:last-of-type {
@@ -1346,7 +1411,32 @@ color: white;
     .footer p:last-of-type span {
 color: var(--main-color);
     }
+    
+
     /* end footer  */
+
+/* scroll to top  */
+.sticky-scroll{
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: fixed;
+    right: 9px;
+    bottom: -26px;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 65px;
+    text-align: center;
+    padding-top: 0px;
+    border: solid 10px var(--main-color);
+    border-radius: 12px;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.sticky-scroll i {
+    font-size: 33px;
+    margin-top: -3px;
+}
     
 
 
